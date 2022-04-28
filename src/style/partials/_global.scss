@@ -1,0 +1,81 @@
+// Variables
+$base-color: #9438f7;
+$primary-color: black;
+$secondary-color: #ebe5e5;
+$ternary-color: #0bafe0;
+$pure-color: white;
+$text: #585656;
+
+/* Modular Class */
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-49 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+// .flex-1{
+//   flex: 0 1 25%;
+// }
