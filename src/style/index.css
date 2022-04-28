@@ -1,0 +1,472 @@
+/* Eric Mayers Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Modular Class */
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.flex-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.flex-49 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.flex-60 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+}
+
+.flex-50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.flex-25 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.flex-15 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 15%;
+          flex: 0 1 15%;
+}
+
+.hero-section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#134176));
+  background-image: linear-gradient(to bottom, black, #134176);
+  padding: 2rem 0 6rem 0;
+  position: relative;
+}
+
+.navbar {
+  background-color: white;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  border-radius: 7px;
+  margin-bottom: -2.2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  z-index: 1;
+  position: relative;
+}
+
+.navbar img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.booking {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 7px;
+  padding-top: 5rem;
+}
+
+.booking .label-1 {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.booking .input-1 {
+  margin-right: 0.4rem;
+}
+
+.booking .text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.booking .col {
+  padding: 1rem 0 1rem 2rem;
+  border-right: 1px solid #f1eeee;
+  height: 8.7rem;
+}
+
+.booking .col h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #585656;
+}
+
+.booking .col span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.booking .col h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.booking .col p {
+  font-size: 1.1rem;
+  color: #585656;
+  padding-bottom: 0.3rem;
+}
+
+.booking .col strong {
+  color: #cf834a;
+}
+
+.booking .col:hover {
+  background-color: #dbf0f1;
+}
+
+.booking .details {
+  border: 1px solid #f1eeee;
+  border-radius: 6px;
+  margin: 1.3rem 0;
+}
+
+.booking .wrapper {
+  background-color: #dbf0f1;
+  padding: 0.7rem 0.6rem;
+  margin-right: 0.2rem;
+  border-radius: 4px;
+}
+
+.booking .wrapper p {
+  color: #585656;
+  padding-top: 0.2rem;
+}
+
+.booking .wrapper i {
+  color: #3cb5ec;
+  padding: 0.3rem;
+}
+
+.booking footer .col-1 {
+  background-color: #dbf0f1;
+  padding: 0.7rem 0.6rem;
+  margin-right: 0.2rem;
+  border-radius: 4px;
+}
+
+.booking footer .col-disable {
+  background-color: #eaecec;
+  padding: 0.7rem 0.6rem;
+  margin-right: 0.2rem;
+  border-radius: 4px;
+}
+
+.booking footer input {
+  margin-right: 0.4rem;
+}
+
+.booking footer h2 {
+  padding-right: 0.5rem;
+  color: #585656;
+}
+
+.booking footer span {
+  color: red;
+}
+
+.search-btn {
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 45%;
+}
+
+.search-btn button {
+  padding: 0.5rem 3rem;
+  border-radius: 29px;
+  font-size: 2rem;
+  color: cornsilk;
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(#30d9f7));
+  background-image: linear-gradient(to left, blue, #30d9f7);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.search-btn .explore {
+  color: white;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.search-btn .explore i {
+  font-weight: 700;
+}
+
+.header-main {
+  background-color: #061526;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.header-main .header-img-1 {
+  width: 8rem;
+}
+
+.header-main .header-img-2 {
+  width: 4rem;
+  height: 3rem;
+  padding-right: 0.3rem;
+}
+
+.header-main .login-btn {
+  width: 16rem;
+  height: 3.7rem;
+  padding-top: 0.3rem;
+}
+
+.header-main .header-img-3 {
+  width: 3rem;
+  height: 3.5rem;
+  padding-right: 0.3rem;
+}
+
+.header-main .header-img-4 {
+  width: 12rem;
+  height: 3.3rem;
+}
+
+.header-main .sub-header {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.header-main .header-text {
+  padding-top: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.header-main .header-col {
+  padding-right: 1rem;
+}
+
+.explore {
+  background-color: antiquewhite;
+}
+
+.explore .explore-links {
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 27rem;
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=index.css.map */
