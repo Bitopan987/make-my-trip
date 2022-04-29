@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer';
-import NoMatch from './components/NoMatch';
+import Footer from './components/Common/Footer';
+import NoMatch from './components/Common/NoMatch';
 import Home from './components/Home';
 import FlightBooking from './components/Booking';
 import 'remixicon/fonts/remixicon.css';
