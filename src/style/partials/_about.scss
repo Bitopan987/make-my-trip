@@ -1,0 +1,33 @@
+.about-section {
+  margin-top: 3rem;
+  .description {
+    background-color: #e7e7e7;
+    padding: 3.5rem 0;
+  }
+  .summary {
+    padding: 3rem 0;
+  }
+  .heading {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+  }
+  .text {
+    padding-bottom: 1rem;
+    color: $text;
+    line-height: 1.2rem;
+  }
+  .col {
+    margin-right: 3rem;
+    h4 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+    p {
+      padding-bottom: 1rem;
+      color: $text;
+      line-height: 1.2rem;
+    }
+  }
+}

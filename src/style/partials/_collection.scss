@@ -1,0 +1,102 @@
+.collection {
+  .box {
+    margin: 0 2rem;
+  }
+  .img-card {
+    position: relative;
+    margin: 0.4rem;
+    .wrapper {
+      width: 20rem;
+    }
+    .top {
+      text-align: center;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 4rem;
+      right: 5rem;
+
+      .text {
+        background-color: $pure-color;
+        display: inline-block;
+        padding: 0.4rem;
+        border-radius: 7px;
+        font-weight: 700;
+      }
+      h2 {
+        padding-top: 0.4rem;
+        font-size: 1.3rem;
+        color: $pure-color;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+    }
+  }
+  img {
+    width: 90%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  .column {
+    padding: 1rem;
+    background-color: $pure-color;
+    margin: 2rem 0;
+    .title {
+      font-weight: 600;
+      font-size: 3rem;
+      padding: 1rem 0;
+      margin-left: 2rem;
+    }
+  }
+}
+
+// Apply Section
+
+.apply {
+  margin-bottom: 2.7rem;
+  h2 {
+    font-size: 1.4rem;
+  }
+  span {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .container {
+    background-color: $pure-color;
+    padding: 0.5rem 1rem;
+    border: 3px solid #f1b8b8;
+    border-radius: 4px;
+  }
+  .heading {
+    color: green;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+  }
+  .wrapper-1 {
+    width: 6rem;
+    margin-right: 0.6rem;
+  }
+
+  img {
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+    background-color: transparent;
+  }
+  .btn-ternary {
+    border: none;
+    outline: none;
+    color: $base-color;
+    font-size: 1.5rem;
+    background-color: transparent;
+    font-weight: 600;
+    i {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-left: 0.6rem;
+    }
+  }
+}

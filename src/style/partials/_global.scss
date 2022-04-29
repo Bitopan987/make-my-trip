@@ -1,5 +1,5 @@
 // Variables
-$base-color: #9438f7;
+$base-color: #279eff;
 $primary-color: black;
 $secondary-color: #ebe5e5;
 $ternary-color: #0bafe0;
@@ -11,6 +11,10 @@ $text: #585656;
 .container {
   margin: 0 auto;
   max-width: 90%;
+}
+
+body {
+  background-color: #f2f2f2;
 }
 
 a {
@@ -31,6 +35,10 @@ img {
 
 .flex {
   display: flex;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -54,10 +62,6 @@ img {
 
 .flex-40 {
   flex: 0 1 40%;
-}
-
-.flex-49 {
-  flex: 0 1 50%;
 }
 
 .flex-60 {

@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 function Booking() {
   return (
     <>
@@ -124,12 +126,14 @@ function Booking() {
           </div>
         </footer>
         <div className="search-btn">
-          <button className="secondary-btn">SEARCH</button>
+          <NavLink to="/flight">
+            <button className="secondary-btn">SEARCH</button>
+          </NavLink>
           <div>
-            <a href="/" className="explore">
+            <NavLink to="/" className="explore">
               <i class="ri-arrow-down-s-line"></i>Explore More
               <i class="ri-arrow-down-s-line"></i>
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>
