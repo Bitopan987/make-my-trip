@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './style/index.css';
+import 'react-multi-carousel/lib/styles.css';
 import { BrowserRouter } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
 
