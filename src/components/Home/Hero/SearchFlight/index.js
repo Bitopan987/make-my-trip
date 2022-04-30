@@ -125,10 +125,6 @@ function SearchFlight() {
               </div>
               <div className="flex align-center col-1">
                 <input type="radio" name="fare" placeholder="" id="fare" />
-                <label for="fare">Student Fares</label>
-              </div>
-              <div className="flex align-center col-1">
-                <input type="radio" name="fare" placeholder="" id="fare" />
                 <label for="fare">Senior Citizen Fares</label>
               </div>
               <div className="flex align-center col-disable">

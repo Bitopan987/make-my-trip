@@ -112,7 +112,7 @@ function FlightList() {
             <label for={data.operator} className="flight-content">
               <div className="flex justify-between align-center">
                 <div className="flex align-center">
-                  <img className="logo" src={data.logo}></img>
+                  <img className="logo" alt="logo" src={data.logo}></img>
                   <h2>{data.operator}</h2>
                 </div>
                 <div>

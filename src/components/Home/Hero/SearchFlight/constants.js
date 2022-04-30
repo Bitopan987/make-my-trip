@@ -8,7 +8,7 @@ export const OPTIONS = [
   },
   {
     value: 'mumbai',
-    cityName: 'Mumbai, India',
+    cityName: 'Mumbai',
     airportCode: 'MUM',
     airportName: 'Mumbai Airport',
     country: 'India',
