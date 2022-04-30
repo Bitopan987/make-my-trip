@@ -76,7 +76,7 @@ function SearchFlight() {
           </form>
           <h2 className="text">Book International and Domestic Flights</h2>
         </header>
-        <div className="details flex align-center ">
+        <div className="details flex">
           <CitySelect
             title="FROM"
             selectedCity={fromCity}
@@ -108,7 +108,7 @@ function SearchFlight() {
           <div className="col flex-25 cursor-pointer">
             <h3>TRAVELLERS & CLASS</h3>
             <h2>
-              1<span>Traveller</span>
+              1 <span>Traveller</span>
             </h2>
             <p>Economy/Prtemium Economy</p>
             <strong>Group Booking Now Available!</strong>

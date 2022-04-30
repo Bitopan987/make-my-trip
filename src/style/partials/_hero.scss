@@ -50,19 +50,18 @@
   .col {
     padding: 1rem 0 1rem 2rem;
     border-right: 1px solid #f1eeee;
-    height: 8.7rem;
     h3 {
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 500;
       color: $text;
     }
     span {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 500;
       color: $primary-color;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 700;
       padding: 0.5rem 0;
     }
@@ -73,6 +72,10 @@
     }
     strong {
       color: #cf834a;
+      font-size: 1rem;
+      font-weight: 700;
+      padding-top: 0.5rem;
+      display: inline-block;
     }
     &:hover {
       background-color: #dbf0f1;
@@ -148,6 +151,7 @@
     outline: none;
     display: inline-block;
     margin-bottom: 1rem;
+    cursor: pointer;
   }
   .explore {
     color: white;
