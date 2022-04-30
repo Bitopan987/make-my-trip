@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import Footer from './components/Common/Footer';
 import NoMatch from './components/Common/NoMatch';
 import Home from './components/Home';
 import FlightBooking from './components/Booking';
@@ -13,10 +12,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<BookingForm />} />
         <Route path="/flight" element={<FlightBooking />} />
-
         <Route path="*" element={<NoMatch />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

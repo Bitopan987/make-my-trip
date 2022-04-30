@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import Booking from './Booking';
+import SearchFlight from './SearchFlight';
 
 function Hero() {
   return (
@@ -7,7 +7,7 @@ function Hero() {
       <section className=" hero-section">
         <div className="container">
           <Navbar />
-          <Booking />
+          <SearchFlight />
         </div>
       </section>
     </>

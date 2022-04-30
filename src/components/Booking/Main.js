@@ -1,3 +1,5 @@
+import FlightList from './FlightList';
+
 function Main() {
   return (
     <section className="main">
@@ -250,95 +252,7 @@ function Main() {
             </form>
           </div>
         </aside>
-        <section className="flight-list">
-          <h1 className="heading">Flights from New Delhi to Bengaluru</h1>
-          <div className="flex flex-wrap justify-between align-center">
-            <article className="flight-content">
-              <div className="flex align-center">
-                <img className="logo" src="./image/indigo-logo.png"></img>
-                <h2>IndiGo</h2>
-              </div>
-              <div className="details flex justify-between align-center">
-                <div>
-                  <strong>22:55</strong>
-                  <p>New Delhi</p>
-                </div>
-                <div>
-                  <h6>22:55</h6>
-                  <p>Non stop</p>
-                </div>
-                <div>
-                  <strong>01:45</strong>
-                  <p>Bengaluru</p>
-                </div>
-                <h2 className="price">₹ 5,590</h2>
-              </div>
-            </article>
-            <article className="flight-content">
-              <div className="flex align-center">
-                <img className="logo" src="./image/indigo-logo.png"></img>
-                <h2>IndiGo</h2>
-              </div>
-              <div className="details flex justify-between align-center">
-                <div>
-                  <strong>22:55</strong>
-                  <p>New Delhi</p>
-                </div>
-                <div>
-                  <h6>22:55</h6>
-                  <p>Non stop</p>
-                </div>
-                <div>
-                  <strong>01:45</strong>
-                  <p>Bengaluru</p>
-                </div>
-                <h2 className="price">₹ 5,590</h2>
-              </div>
-            </article>
-            <article className="flight-content">
-              <div className="flex align-center">
-                <img className="logo" src="./image/indigo-logo.png"></img>
-                <h2>IndiGo</h2>
-              </div>
-              <div className="details flex justify-between align-center">
-                <div>
-                  <strong>22:55</strong>
-                  <p>New Delhi</p>
-                </div>
-                <div>
-                  <h6>22:55</h6>
-                  <p>Non stop</p>
-                </div>
-                <div>
-                  <strong>01:45</strong>
-                  <p>Bengaluru</p>
-                </div>
-                <h2 className="price">₹ 5,590</h2>
-              </div>
-            </article>
-            <article className="flight-content">
-              <div className="flex align-center">
-                <img className="logo" src="./image/indigo-logo.png"></img>
-                <h2>IndiGo</h2>
-              </div>
-              <div className="details flex justify-between align-center">
-                <div>
-                  <strong>22:55</strong>
-                  <p>New Delhi</p>
-                </div>
-                <div>
-                  <h6>22:55</h6>
-                  <p>Non stop</p>
-                </div>
-                <div>
-                  <strong>01:45</strong>
-                  <p>Bengaluru</p>
-                </div>
-                <h2 className="price">₹ 5,590</h2>
-              </div>
-            </article>
-          </div>
-        </section>
+        <FlightList />
       </div>
     </section>
   );

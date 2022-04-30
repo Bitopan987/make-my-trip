@@ -5,7 +5,7 @@ import { OPTIONS } from './constants';
 
 import CitySelect from './CitySelect';
 
-function Booking() {
+function SearchFlight() {
   const [fromCity, setFromCity] = useState(null);
   const [selectingFromCity, setSelectingFromCity] = useState(false);
   const [selectingToCity, setSelectingToCity] = useState(false);
@@ -175,4 +175,4 @@ function Booking() {
   );
 }
 
-export default Booking;
+export default SearchFlight;
