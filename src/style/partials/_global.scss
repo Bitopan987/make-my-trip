@@ -13,6 +13,43 @@ $text: #585656;
   max-width: 90%;
 }
 
+.btn-primary {
+  padding: 0.5rem 2rem;
+  border-radius: 29px;
+  font-size: 2rem;
+  color: cornsilk;
+  background-image: linear-gradient(to left, blue, rgb(48, 217, 247));
+  font-weight: 700;
+  border: none;
+  outline: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.btn-add {
+  border: none;
+  color: $base-color;
+  outline: none;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: #1478d6;
+}
+
+.padding {
+  padding: 0.6rem 0;
+}
+
+.padding-1 {
+  padding: 2rem 0;
+}
+
 body {
   background-color: #f2f2f2;
 }

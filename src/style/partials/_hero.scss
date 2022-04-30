@@ -96,13 +96,13 @@
   footer {
     .col-1 {
       background-color: #dbf0f1;
-      padding: 0.7rem 0.6rem;
+      padding: 1.2rem 0.6rem;
       margin-right: 0.2rem;
       border-radius: 4px;
     }
     .col-disable {
       background-color: #eaecec;
-      padding: 0.7rem 0.6rem;
+      padding: 1.2rem 0.6rem;
       margin-right: 0.2rem;
       border-radius: 4px;
     }
@@ -134,7 +134,7 @@
   bottom: 2rem;
   left: 45%;
   button {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     border-radius: 29px;
     font-size: 2rem;
     color: cornsilk;
@@ -142,6 +142,7 @@
     font-weight: 700;
     border: none;
     outline: none;
+    display: inline-block;
     margin-bottom: 1rem;
   }
   .explore {

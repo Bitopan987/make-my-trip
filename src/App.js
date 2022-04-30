@@ -3,6 +3,7 @@ import Footer from './components/Common/Footer';
 import NoMatch from './components/Common/NoMatch';
 import Home from './components/Home';
 import FlightBooking from './components/Booking';
+import BookingForm from './components/Booking/BookingForm';
 import 'remixicon/fonts/remixicon.css';
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <div id="main">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<BookingForm />} />
         <Route path="/flight" element={<FlightBooking />} />
+
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />

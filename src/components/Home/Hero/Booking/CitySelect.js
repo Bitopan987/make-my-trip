@@ -4,7 +4,7 @@ import { capitalize } from '../../../../utils/styleUtils';
 import { OPTIONS } from './constants';
 
 const CustomOption = ({ cityName, airportCode, airportName, country }) => (
-  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+  <div className="flex justify-between">
     <div>
       <h5>
         {cityName} {country}
@@ -33,7 +33,7 @@ function CitySelect({
           {selectedCity?.country}
         </p>
       </div>
-      {selecting ? (
+      {selecting && (
         <Select
           {...props}
           placeholder={capitalize(title)}
@@ -44,8 +44,6 @@ function CitySelect({
           formatOptionLabel={CustomOption}
           onChange={(value) => onChange(value)}
         />
-      ) : (
-        ''
       )}
     </div>
   );

@@ -108,7 +108,7 @@ function Booking() {
           </div>
         </div>
         <footer className="flex justify-between align-center">
-          <div className="flex-50">
+          <div>
             <form className="flex justify-between align-center">
               <h2>
                 Select A <br /> FareType:
