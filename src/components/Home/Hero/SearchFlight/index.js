@@ -1,15 +1,19 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-
 import { OPTIONS } from './constants';
-
 import CitySelect from './CitySelect';
+import DateSelect from './DateSelect';
+import 'react-datepicker/dist/react-datepicker.css';
 
 function SearchFlight() {
   const [fromCity, setFromCity] = useState(null);
   const [selectingFromCity, setSelectingFromCity] = useState(false);
   const [selectingToCity, setSelectingToCity] = useState(false);
   const [toCity, setToCity] = useState(null);
+  const [departureDate, setDepartureDate] = useState(new Date());
+  const [returnDate, setReturnDate] = useState(new Date());
+  const [departureDatePicking, setDepartureDatePicking] = useState(false);
+  const [returnDatePicking, setReturnDatePicking] = useState(false);
 
   const onFromCityChange = (value) => {
     setSelectingFromCity(false);
@@ -19,6 +23,16 @@ function SearchFlight() {
   const onToCityChange = (value) => {
     setSelectingToCity(false);
     setToCity(value);
+  };
+
+  const onDepartureDateChange = (date) => {
+    setDepartureDate(date);
+    setDepartureDatePicking(false);
+  };
+
+  const onReturnDateChange = (date) => {
+    setReturnDate(date);
+    setReturnDatePicking(false);
   };
 
   useEffect(() => {
@@ -77,27 +91,20 @@ function SearchFlight() {
             setSelecting={setSelectingToCity}
             onChange={onToCityChange}
           />
-          {/* <div className="col flex-25">
-            <h3>To</h3>
-            <h2>Bengaluru</h2>
-            <p>BLR,Bengaluru International</p>
-          </div> */}
-          <div className="col flex-15">
-            <h3>DEPARTURE</h3>
-            <h2>
-              29<span>Apr'22</span>
-            </h2>
-            <p>Friday</p>
-          </div>
-          <div className="col flex-15">
-            <div>
-              <h3>RETURN</h3>
-            </div>
-            <h2>
-              30<span>Apr'22</span>
-            </h2>
-            <p>Saturday</p>
-          </div>
+          <DateSelect
+            title="DEPARTURE"
+            date={departureDate}
+            datePicking={departureDatePicking}
+            setDatePicking={setDepartureDatePicking}
+            onChange={onDepartureDateChange}
+          />
+          <DateSelect
+            title="RETURN"
+            date={returnDate}
+            datePicking={returnDatePicking}
+            setDatePicking={setReturnDatePicking}
+            onChange={onReturnDateChange}
+          />
           <div className="col flex-25">
             <h3>TRAVELLERS & CLASS</h3>
             <h2>
