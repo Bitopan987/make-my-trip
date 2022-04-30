@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 function DateSelect({ title, date, onChange, datePicking, setDatePicking }) {
   return (
     <div className="col flex-15">
-      <div onClick={() => setDatePicking(true)}>
+      <div onClick={() => setDatePicking(true)} className="cursor-pointer">
         <h3>{title}</h3>
         <h2>
           {date.getDate()}

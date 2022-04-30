@@ -105,7 +105,7 @@ function SearchFlight() {
             setDatePicking={setReturnDatePicking}
             onChange={onReturnDateChange}
           />
-          <div className="col flex-25">
+          <div className="col flex-25 cursor-pointer">
             <h3>TRAVELLERS & CLASS</h3>
             <h2>
               1<span>Traveller</span>

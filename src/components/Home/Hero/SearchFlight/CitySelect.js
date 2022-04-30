@@ -24,8 +24,11 @@ function CitySelect({
   ...props
 }) {
   return (
-    <div className="col flex-25 relative">
-      <div onClick={() => !selecting && setSelecting(true)}>
+    <div className="col flex-25">
+      <div
+        onClick={() => !selecting && setSelecting(true)}
+        className="cursor-pointer"
+      >
         <h3>{title}</h3>
         <h2>{selectedCity?.cityName}</h2>
         <p>

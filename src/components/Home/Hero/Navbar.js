@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <section className="navbar ">
+    <section className="navbar">
       <nav>
         <ul className="flex space-around align-center">
           <li>
