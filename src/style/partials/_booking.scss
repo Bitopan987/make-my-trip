@@ -3,6 +3,28 @@
   background-color: $pure-color;
   padding: 0.5rem 0;
 
+  .nav {
+    .nav-btn {
+      cursor: pointer;
+      text-align: center;
+      padding: 0.5rem 1.5rem;
+      border-bottom: 3px solid transparent;
+      color: $text;
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    .nav-btn:hover,
+    .nav-btn-active {
+      color: $ternary-color;
+      transition: color 0.5s, border-bottom 0.5s;
+    }
+
+    .nav-btn-active {
+      border-bottom: 3px solid $ternary-color;
+    }
+  }
+
   p {
     margin-bottom: 0.3rem;
   }

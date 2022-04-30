@@ -4,14 +4,14 @@ import { capitalize } from '../../../../utils/styleUtils';
 import { OPTIONS } from './constants';
 
 const CustomOption = ({ cityName, airportCode, airportName, country }) => (
-  <div className="flex justify-between">
+  <div className="flex justify-between city-option">
     <div>
-      <h5>
+      <h3 className="city">
         {cityName} {country}
-      </h5>
-      <span>{airportName}</span>
+      </h3>
+      <span className="airport-name">{airportName}</span>
     </div>
-    <span>{airportCode}</span>
+    <span className="airport-code">{airportCode}</span>
   </div>
 );
 
@@ -24,7 +24,7 @@ function CitySelect({
   ...props
 }) {
   return (
-    <div className="col flex-25">
+    <div className="col flex-25 city-select">
       <div
         onClick={() => !selecting && setSelecting(true)}
         className="cursor-pointer"
@@ -41,7 +41,7 @@ function CitySelect({
           {...props}
           placeholder={capitalize(title)}
           menuIsOpen={true}
-          className={'w-max absolute w-full'}
+          className={'w-max w-full'}
           autoFocus={true}
           options={OPTIONS}
           formatOptionLabel={CustomOption}

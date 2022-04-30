@@ -76,7 +76,7 @@ function SearchFlight() {
           </form>
           <h2 className="text">Book International and Domestic Flights</h2>
         </header>
-        <div className="details flex">
+        <div className="details flex relative">
           <CitySelect
             title="FROM"
             selectedCity={fromCity}

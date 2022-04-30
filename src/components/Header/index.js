@@ -1,18 +1,21 @@
 import Login from './Login';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="header-main">
       <div className="container header-content flex justify-between align-center">
         <div className="flex-50">
-          <img
-            className="header-img-1"
-            src="./image/mmtLogoWhite.png"
-            alt="yourpic"
-          />
+          <Link to="/">
+            <img
+              className="header-img-1"
+              src="./image/mmtLogoWhite.png"
+              alt="yourpic"
+            />
+          </Link>
         </div>
-        <div className="flex flex-60 align-center">
-          <div className="header-col flex align-center">
+        <div className="flex flex-60 align-center flex-end">
+          {/* <div className="header-col flex align-center">
             <div>
               <img
                 className="header-img-2"
@@ -24,20 +27,14 @@ function Header() {
               <h2 className="sub-header">Introducing myBiz</h2>
               <p className="header-text">MakeMyTrip for Business</p>
             </div>
-          </div>
-          <div className="header-col flex align-center">
-            <div>
-              <img
-                src="./image/travellug123.png"
-                alt="mybiz"
-                className="header-img-3"
-              />
-            </div>
+          </div> */}
+          <Link to="my-trips" className="header-col flex align-center">
+            <i className="ri-suitcase-2-fill"></i>
             <div>
               <h2 className="sub-header">MyTrips</h2>
               <p className="header-text">Manage your bookings</p>
             </div>
-          </div>
+          </Link>
           <div>
             <Login />
           </div>

@@ -97,6 +97,11 @@ img {
 .align-center {
   align-items: center;
 }
+
+.flex-end {
+  justify-content: flex-end;
+}
+
 .flex-30 {
   flex: 0 1 30%;
 }
