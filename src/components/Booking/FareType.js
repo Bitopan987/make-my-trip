@@ -4,7 +4,13 @@ function FareType() {
       <form className="flex  align-center">
         <h2>FareType:</h2>
         <div className="flex align-center option">
-          <input type="radio" name="fare" placeholder="" id="regualar" />
+          <input
+            type="radio"
+            checked
+            name="fare"
+            placeholder=""
+            id="regualar"
+          />
           <label for="fare">Redular </label>
         </div>
         <div className="flex align-center option">
