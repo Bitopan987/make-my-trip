@@ -52,15 +52,15 @@ function FlightList() {
               <div className="details flex justify-between align-center">
                 <div>
                   <strong>{flight.time.departure}</strong>
-                  <p>New Delhi</p>
+                  <p>{cityFrom.cityName}</p>
                 </div>
                 <div>
-                  <h6>{flight.duration}</h6>
+                  <h6 className="border-green">{flight.duration}</h6>
                   <p>Non stop</p>
                 </div>
                 <div>
-                  <strong>{flight.time.departure}</strong>
-                  <p>Bengaluru</p>
+                  <strong>{flight.time.arrival}</strong>
+                  <p>{cityTo.cityName}</p>
                 </div>
                 <h2 className="price">{flight.price}</h2>
               </div>

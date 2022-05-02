@@ -51,8 +51,8 @@
         "date": "30 April",
         "duration": "02 h 10m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "6:35",
+          "departure": "4:25"
         },
         "fare": [
           "regular",
@@ -69,10 +69,10 @@
         "price": 6450,
         "to": "Gujrat",
         "date": "30 April",
-        "duration": "02 h 10m",
+        "duration": "02 h 15m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "9:35",
+          "departure": "7:20"
         },
         "fare": [
           "regular",
@@ -92,8 +92,8 @@
         "date": "30 April",
         "duration": "02 h 10m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "11:05",
+          "departure": "8:55"
         },
         "fare": [
           "regular",
@@ -110,10 +110,10 @@
         "price": 7319,
         "to": "Bihar",
         "date": "30 April",
-        "duration": "02 h 10m",
+        "duration": "02 h 20m",
         "time": {
-          "arrival": "16:10",
-          "departure": "14:00"
+          "arrival": "12:20",
+          "departure": "10:10"
         },
         "fare": [
           "regular",
@@ -130,10 +130,10 @@
         "price": 8089,
         "to": "Punjab",
         "date": "30 April",
-        "duration": "02 h 10m",
+        "duration": "02 h 05m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "14:10",
+          "departure": "12:05"
         },
         "fare": [
           "regular",
@@ -152,8 +152,28 @@
         "date": "30 April",
         "duration": "02 h 10m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "16:35",
+          "departure": "14:25"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Panipat",
+        "operator": "IndiGo",
+        "logo": "https://logodix.com/logo/831606.png",
+        "price": 6450,
+        "to": "Gujrat",
+        "date": "30 April",
+        "duration": "02 h 15m",
+        "time": {
+          "arrival": "19:25",
+          "departure": "17:10"
         },
         "fare": [
           "regular",
@@ -172,8 +192,8 @@
         "date": "30 April",
         "duration": "02 h 10m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "20:10",
+          "departure": "18:00"
         },
         "fare": [
           "regular",
@@ -184,16 +204,36 @@
         ]
       },
       {
-        "from": "Panipat",
-        "operator": "IndiGo",
-        "logo": "https://logodix.com/logo/831606.png",
-        "price": 6450,
-        "to": "Gujrat",
+        "operator": "SpiceJet",
+        "logo": "https://aviationscoop.com/wp-content/uploads/2018/09/spicejet-spicengage-inflight-entertainment-new-for-flyers-1200x900.jpg",
+        "price": 5849,
+        "from": "Delhi",
+        "to": "Mumbai",
         "date": "30 April",
-        "duration": "02 h 10m",
+        "duration": "02 h 05m",
         "time": {
-          "arrival": "4:10",
-          "departure": "2:00"
+          "arrival": "14:30",
+          "departure": "12:25"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "operator": "SpiceJet",
+        "logo": "https://aviationscoop.com/wp-content/uploads/2018/09/spicejet-spicengage-inflight-entertainment-new-for-flyers-1200x900.jpg",
+        "price": 5849,
+        "from": "Delhi",
+        "to": "Mumbai",
+        "date": "30 April",
+        "duration": "02 h 05m",
+        "time": {
+          "arrival": "19:05",
+          "departure": "17:00"
         },
         "fare": [
           "regular",
