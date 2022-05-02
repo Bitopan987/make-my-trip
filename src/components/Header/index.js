@@ -32,7 +32,7 @@ function Header() {
             <i className="ri-suitcase-2-fill"></i>
             <div>
               <h2 className="sub-header">MyTrips</h2>
-              <p className="header-text">Manage bookings</p>
+              <p className="header-text">Bookings</p>
             </div>
           </Link>
           <div>

@@ -486,30 +486,30 @@ img {
   padding: 0.3rem;
 }
 
-.booking footer .col-1 {
+.fare-type .col-1 {
   background-color: #dbf0f1;
   padding: 1.2rem 0.6rem;
   margin-right: 0.2rem;
   border-radius: 4px;
 }
 
-.booking footer .col-disable {
+.fare-type .col-disable {
   background-color: #eaecec;
   padding: 1.2rem 0.6rem;
   margin-right: 0.2rem;
   border-radius: 4px;
 }
 
-.booking footer input {
+.fare-type input {
   margin-right: 0.4rem;
 }
 
-.booking footer h2 {
+.fare-type h2 {
   padding-right: 0.5rem;
   color: #585656;
 }
 
-.booking footer span {
+.fare-type span {
   color: red;
 }
 
@@ -580,9 +580,9 @@ img {
 }
 
 .header-main .header-text {
-  padding-top: 0.3rem;
-  font-size: 0.7rem;
-  font-weight: 500;
+  padding-top: 0.2rem;
+  font-size: 0.6rem;
+  line-height: 1.2;
 }
 
 .header-main .header-col {
