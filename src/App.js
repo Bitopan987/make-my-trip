@@ -22,7 +22,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log(bookingInProgress, 'dgd');
     if (bookingInProgress) {
       const { cityFrom, cityTo, departureDate, returnDate } =
         bookingInProgress.data;

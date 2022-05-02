@@ -1,24 +1,7 @@
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { NAV_LINKS } from '../Home/Hero/constants';
-import Navbar from '../Home/Hero/Navbar';
 
-function NavItem({ data }) {
-  const { link, label, iconClass } = data;
-  return (
-    <NavLink
-      to={link}
-      className={({ isActive }) =>
-        `nav-btn ${isActive ? 'nav-btn-active' : ''}`
-      }
-    >
-      <a>
-        <i className={iconClass}></i>
-        <p>{label}</p>
-      </a>
-    </NavLink>
-  );
-}
+import Navbar from '../Home/Hero/Navbar';
 
 function Header() {
   return (
