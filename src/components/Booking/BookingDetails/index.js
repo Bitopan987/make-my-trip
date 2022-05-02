@@ -1,7 +1,7 @@
 import FlightDetails from './FlightDetails';
 import FlightSummary from './FlightSummary';
 
-function BookingForm() {
+function BookingDetails() {
   return (
     <section className="booking-form">
       <header className="form-header">
@@ -45,4 +45,4 @@ function BookingForm() {
   );
 }
 
-export default BookingForm;
+export default BookingDetails;

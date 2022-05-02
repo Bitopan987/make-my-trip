@@ -1,4 +1,14 @@
+import { useSelector } from 'react-redux';
+
+import { formatDate } from '../../utils/styleUtils';
+
+import Button from '../Common/Button';
+
 function SubHeader() {
+  const { cityFrom, cityTo, departureDate, returnDate } = useSelector(
+    (state) => state.booking
+  );
+
   return (
     <section className="subheader">
       <div className="container">
@@ -13,22 +23,22 @@ function SubHeader() {
             </div>
             <div className="col">
               <h2>FROM</h2>
-              <p>New Delhi,India</p>
+              <p>{cityFrom.cityName}</p>
             </div>
             <div>
               <i class="ri-arrow-left-right-line"></i>
             </div>
             <div className="col">
               <h2>TO</h2>
-              <p>Bengaluru,India</p>
+              <p>{cityTo.cityName}</p>
             </div>
             <div className="col">
               <h2>DEPART</h2>
-              <p>Fri,Apr,29,2022</p>
+              <p>{formatDate(departureDate)}</p>
             </div>
             <div className="col">
               <h2>RETURN</h2>
-              <p>Sat,Apr,30,2022</p>
+              <p>{formatDate(returnDate)}</p>
             </div>
             <div className="col">
               <h2>PASSENGER</h2>
@@ -36,7 +46,7 @@ function SubHeader() {
             </div>
           </div>
           <div>
-            <button className="btn-secondary">Search</button>
+            <Button title={'Search'} className="btn-secondary" />
           </div>
         </div>
         <div className="option_header">

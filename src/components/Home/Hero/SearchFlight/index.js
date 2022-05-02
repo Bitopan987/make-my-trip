@@ -1,45 +1,28 @@
-import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { OPTIONS } from './constants';
 import CitySelect from './CitySelect';
 import DateSelect from './DateSelect';
 import 'react-datepicker/dist/react-datepicker.css';
+import { useSelector, useDispatch } from 'react-redux';
+import Button from '../../../Common/Button';
+import {
+  setCityFrom,
+  setDepartureDate,
+  setCityTo,
+  setReturnDate,
+} from '../../../../redux/bookingSlice';
 
 function SearchFlight() {
-  const [fromCity, setFromCity] = useState(null);
-  const [selectingFromCity, setSelectingFromCity] = useState(false);
-  const [selectingToCity, setSelectingToCity] = useState(false);
-  const [toCity, setToCity] = useState(null);
-  const [departureDate, setDepartureDate] = useState(new Date());
-  const [returnDate, setReturnDate] = useState(new Date());
-  const [departureDatePicking, setDepartureDatePicking] = useState(false);
-  const [returnDatePicking, setReturnDatePicking] = useState(false);
+  const booking = useSelector((state) => state.booking);
+  const dispatch = useDispatch();
+  const { cityFrom, cityTo, departureDate, returnDate, passengerCount } =
+    booking;
 
-  const onFromCityChange = (value) => {
-    setSelectingFromCity(false);
-    setFromCity(value);
+  const onSearchClick = () => {
+    localStorage.setItem(
+      'bookingInProgress',
+      JSON.stringify({ data: booking, currentPage: 'flightList' })
+    );
   };
-
-  const onToCityChange = (value) => {
-    setSelectingToCity(false);
-    setToCity(value);
-  };
-
-  const onDepartureDateChange = (date) => {
-    setDepartureDate(date);
-    setDepartureDatePicking(false);
-  };
-
-  const onReturnDateChange = (date) => {
-    setReturnDate(date);
-    setReturnDatePicking(false);
-  };
-
-  useEffect(() => {
-    setFromCity(OPTIONS[0]);
-    setToCity(OPTIONS[1]);
-  }, []);
-
   return (
     <>
       <section className="booking ">
@@ -79,36 +62,28 @@ function SearchFlight() {
         <div className="details flex relative">
           <CitySelect
             title="FROM"
-            selectedCity={fromCity}
-            selecting={selectingFromCity}
-            setSelecting={setSelectingFromCity}
-            onChange={onFromCityChange}
+            selectedCity={cityFrom}
+            onChange={(value) => dispatch(setCityFrom(value))}
           />
           <CitySelect
             title="TO"
-            selectedCity={toCity}
-            selecting={selectingToCity}
-            setSelecting={setSelectingToCity}
-            onChange={onToCityChange}
+            selectedCity={cityTo}
+            onChange={(value) => dispatch(setCityTo(value))}
           />
           <DateSelect
             title="DEPARTURE"
             date={departureDate}
-            datePicking={departureDatePicking}
-            setDatePicking={setDepartureDatePicking}
-            onChange={onDepartureDateChange}
+            onChange={(value) => dispatch(setDepartureDate(value))}
           />
           <DateSelect
             title="RETURN"
             date={returnDate}
-            datePicking={returnDatePicking}
-            setDatePicking={setReturnDatePicking}
-            onChange={onReturnDateChange}
+            onChange={(value) => dispatch(setReturnDate(value))}
           />
           <div className="col flex-25 cursor-pointer">
             <h3>TRAVELLERS & CLASS</h3>
             <h2>
-              1 <span>Traveller</span>
+              {passengerCount} <span>Traveller</span>
             </h2>
             <p>Economy/Prtemium Economy</p>
             <strong>Group Booking Now Available!</strong>
@@ -146,6 +121,7 @@ function SearchFlight() {
               </div>
             </form>
           </div>
+
           <div className="flex justify-between align-center recent">
             <h2>Recent Searches :</h2>
             <div className="wrapper">
@@ -163,8 +139,8 @@ function SearchFlight() {
           </div>
         </footer>
         <div className="search-btn">
-          <NavLink to="/flight">
-            <button className="secondary-btn">SEARCH</button>
+          <NavLink to="/flight" onClick={() => onSearchClick()}>
+            <Button title={'SEARCH'} />
           </NavLink>
           <div>
             <NavLink to="/" className="explore">

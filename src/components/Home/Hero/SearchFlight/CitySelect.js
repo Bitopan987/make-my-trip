@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Select from 'react-select';
 import { capitalize } from '../../../../utils/styleUtils';
 
@@ -15,14 +16,9 @@ const CustomOption = ({ cityName, airportCode, airportName, country }) => (
   </div>
 );
 
-function CitySelect({
-  selectedCity,
-  title,
-  selecting,
-  setSelecting,
-  onChange,
-  ...props
-}) {
+function CitySelect({ selectedCity, title, onChange, ...props }) {
+  const [selecting, setSelecting] = useState(false);
+
   return (
     <div className="col flex-25 city-select">
       <div
@@ -45,7 +41,10 @@ function CitySelect({
           autoFocus={true}
           options={OPTIONS}
           formatOptionLabel={CustomOption}
-          onChange={(value) => onChange(value)}
+          onChange={(value) => {
+            setSelecting(false);
+            onChange(value);
+          }}
         />
       )}
     </div>

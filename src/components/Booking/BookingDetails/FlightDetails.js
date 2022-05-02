@@ -1,23 +1,49 @@
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { formatDate } from '../../../utils/styleUtils';
+import { setSelectedFlight } from '../../../redux/bookingSlice';
+import UserForm from './UserForm';
+
 function FlightDetails() {
+  const { selectedFlight, cityTo, cityFrom, departureDate } = useSelector(
+    (state) => state.booking
+  );
+
+  const dispatch = useDispatch();
+
+  const bookingInProgress = JSON.parse(
+    localStorage.getItem('bookingInProgress')
+  );
+
+  useEffect(() => {
+    if (bookingInProgress) {
+      dispatch(setSelectedFlight(bookingInProgress.data.selectedFlight));
+    }
+  }, []);
+
   return (
     <section className="details-section">
       <div className="flight-details">
         <div className="wrapper">
           <div className="flex justify-between ">
             <div>
-              <h2>
-                New Delhi <i class="ri-arrow-right-line"></i> Bengaluru
+              <h2 className="flex align-center">
+                <span>{cityFrom.cityName}</span>{' '}
+                <i class="ri-arrow-right-line"></i>{' '}
+                <span>{cityTo.cityName}</span>
               </h2>
               <p className="padding">
-                <span>Friday,Apr 22</span> Non-Stop 2h 50m
+                <span>{formatDate(departureDate)}</span> Non-Stop{' '}
+                {selectedFlight.duration}
               </p>
               <div className="flex  align-center">
                 <img
                   className="logo"
-                  src="./image/indigo-logo.png"
-                  alt="indigo-logo"
+                  src={selectedFlight.logo}
+                  alt={`${selectedFlight.operator} logo`}
                 ></img>
-                <strong>IndiGo 6E-5036</strong>
+                <strong>{selectedFlight.operator}</strong>
               </div>
             </div>
             <div>
@@ -31,18 +57,18 @@ function FlightDetails() {
           <article className="ticket flex justify-between">
             <div className="flex">
               <div className="box">
-                <h3>2:25</h3>
-                <h3>2:25</h3>
+                <h3>{selectedFlight.time?.departure}</h3>
+                <h3>{selectedFlight.time?.arrival}</h3>
               </div>
               <div>
                 <p>
-                  <strong>NewDelhi </strong>Indira Gandhi International Airport
-                  Terminal 3
+                  <strong>{cityFrom.cityName} </strong>
+                  {cityFrom.airportName}
                 </p>
-                <p className="totaltime">2h 50m</p>
+                <p className="totaltime">{selectedFlight.duration}</p>
                 <p>
-                  <strong>Bengaluru </strong>Bengaluru International Airport
-                  Terminal 3
+                  <strong>{cityTo.cityName} </strong>
+                  {cityTo.airportName}
                 </p>
               </div>
             </div>
@@ -91,49 +117,7 @@ function FlightDetails() {
           <p>You have not added any adults to the list</p>
           <button className="btn-add">+ ADD NEW ADULT</button>
         </div>
-        <form className="form-2">
-          <h4 className="padding">Booking details will be sent to </h4>
-          <div className="flex align-center justify-between">
-            <div className="input-item">
-              <label for="code">Country Code</label>
-              <input
-                type="number"
-                id="code"
-                name="code"
-                placeholder="+91"
-              ></input>
-            </div>
-            <div className="input-item">
-              <label for="">Mobile No</label>
-              <input
-                type="number"
-                id="mobile"
-                name="mobile"
-                placeholder="Mobile No"
-              ></input>
-              <p>Mobile No is required</p>
-            </div>
-            <div className="input-item">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-              ></input>
-              <p>Email is required</p>
-            </div>
-          </div>
-          <div className="form-footer">
-            <label>
-              <input type="checkbox" name="checkbox"></input>I have a GST Number
-              (optional)
-            </label>
-          </div>
-          <div className="padding-1">
-            <button className="btn-primary">Continue</button>
-          </div>
-        </form>
+        <UserForm />
       </div>
     </section>
   );

@@ -31,21 +31,6 @@ function Header() {
           <Navbar path="/flight" />
         </div>
         <div className="flex align-center">
-          <div className="login-bar flex align-center">
-            <div>
-              <img src="./image/nature2.jpg"></img>
-            </div>
-            <div>
-              <p>
-                {' '}
-                <a href="/">Login </a>or
-              </p>
-              <p>
-                {' '}
-                <a href="/">Create Account</a>
-              </p>
-            </div>
-          </div>
           <div className="country ">
             <div>
               <p>Country</p>

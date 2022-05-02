@@ -1,6 +1,10 @@
+import { useState } from 'react';
+
 import DatePicker from 'react-datepicker';
 
-function DateSelect({ title, date, onChange, datePicking, setDatePicking }) {
+function DateSelect({ title, date, onChange }) {
+  const [datePicking, setDatePicking] = useState(false);
+
   return (
     <div className="col flex-15">
       <div onClick={() => setDatePicking(true)} className="cursor-pointer">
@@ -21,7 +25,10 @@ function DateSelect({ title, date, onChange, datePicking, setDatePicking }) {
           selected={date}
           autoFocus={true}
           customInput={<></>}
-          onChange={(date = new Date()) => onChange(date)}
+          onChange={(date = new Date()) => {
+            setDatePicking(false);
+            onChange(date);
+          }}
         />
       )}
     </div>

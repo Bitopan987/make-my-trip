@@ -1,0 +1,208 @@
+[
+  {
+    "flightData": [
+      {
+        "from": "Delhi",
+        "operator": "GoFirst",
+        "logo": "https://www.mumbaiairport.com/images/airlines17/go-first.png",
+        "price": 7319,
+        "to": "Dehradun",
+        "date": "30 April",
+        "time": {
+          "arrival": "14:50",
+          "departure": "13:00"
+        },
+        "duration": "01h 50m",
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Amritsar",
+        "operator": "Vistara",
+        "logo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+        "price": 8089,
+        "to": "Punjab",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+
+      {
+        "operator": "SpiceJet",
+        "logo": "https://aviationscoop.com/wp-content/uploads/2018/09/spicejet-spicengage-inflight-entertainment-new-for-flyers-1200x900.jpg",
+        "price": 5849,
+        "from": "Delhi",
+        "to": "Mumbai",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Panipat",
+        "operator": "IndiGo",
+        "logo": "https://logodix.com/logo/831606.png",
+        "price": 6450,
+        "to": "Gujrat",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+
+      {
+        "from": "Delhi",
+        "operator": "GoFirst",
+        "logo": "https://www.mumbaiairport.com/images/airlines17/go-first.png",
+        "price": 7319,
+        "to": "Bihar",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Delhi",
+        "operator": "GoFirst",
+        "logo": "https://www.mumbaiairport.com/images/airlines17/go-first.png",
+        "price": 7319,
+        "to": "Bihar",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "16:10",
+          "departure": "14:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Amritsar",
+        "operator": "Vistara",
+        "logo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+        "price": 8089,
+        "to": "Punjab",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Panipat",
+        "operator": "IndiGo",
+        "logo": "https://logodix.com/logo/831606.png",
+        "price": 6450,
+        "to": "Gujrat",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Panipat",
+        "operator": "IndiGo",
+        "logo": "https://logodix.com/logo/831606.png",
+        "price": 6450,
+        "to": "Gujrat",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      },
+      {
+        "from": "Panipat",
+        "operator": "IndiGo",
+        "logo": "https://logodix.com/logo/831606.png",
+        "price": 6450,
+        "to": "Gujrat",
+        "date": "30 April",
+        "duration": "02 h 10m",
+        "time": {
+          "arrival": "4:10",
+          "departure": "2:00"
+        },
+        "fare": [
+          "regular",
+          "armed forces",
+          "student",
+          "senior citizen",
+          "double seat"
+        ]
+      }
+    ]
+  }
+]

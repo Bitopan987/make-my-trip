@@ -38,6 +38,26 @@ body {
   background-color: transparent;
 }
 
+.btn {
+  padding: 0.5rem 2rem;
+  border-radius: 1.8rem;
+  font-size: 2rem;
+  color: cornsilk;
+  background-image: linear-gradient(to left, blue, rgb(48, 217, 247));
+  font-weight: 700;
+  border: none;
+  outline: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+}
+
 .red {
   color: red;
 }
