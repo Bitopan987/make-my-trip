@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { formatDate } from '../../utils/styleUtils';
 
 import Button from '../Common/Button';
+import FareType from './FareType';
 
 function SubHeader() {
   const { cityFrom, cityTo, departureDate, returnDate } = useSelector(
@@ -49,39 +50,7 @@ function SubHeader() {
             <Button title={'Search'} className="btn-secondary" />
           </div>
         </div>
-        <div className="option_header">
-          <form className="flex  align-center">
-            <h2>FareType:</h2>
-            <div className="flex align-center option">
-              <input type="radio" name="fare" placeholder="" id="regualar" />
-              <label for="fare">Redular </label>
-            </div>
-            <div className="flex align-center option">
-              <input type="radio" name="fare" placeholder="" id="fare" />
-              <label for="fare">
-                Armed Forces <span>NEW</span>
-              </label>
-            </div>
-            <div className="flex align-center option">
-              <input type="radio" name="fare" placeholder="" id="fare" />
-              <label for="fare">Student</label>
-            </div>
-            <div className="flex align-center option">
-              <input type="radio" name="fare" placeholder="" id="fare" />
-              <label for="fare">Senior Citizen</label>
-            </div>
-            <div className="flex align-center option">
-              <input
-                type="radio"
-                disabled
-                name="fare"
-                placeholder=""
-                id="fare"
-              />
-              <label>Double Seat</label>
-            </div>
-          </form>
-        </div>
+        <FareType />
       </div>
     </section>
   );

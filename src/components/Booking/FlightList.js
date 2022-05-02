@@ -62,7 +62,7 @@ function FlightList() {
                   <strong>{flight.time.arrival}</strong>
                   <p>{cityTo.cityName}</p>
                 </div>
-                <h2 className="price">{flight.price}</h2>
+                <h2 className="price"> ₹ {flight.price}</h2>
               </div>
             </article>
           );
