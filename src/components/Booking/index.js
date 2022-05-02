@@ -1,13 +1,19 @@
 import Header from './Header';
 import SubHeader from './SubHeader';
-import Main from './Main';
+import FlightList from './FlightList';
+import Filter from './Filter';
 
 function FlightBooking() {
   return (
     <div>
       <Header />
       <SubHeader />
-      <Main />
+      <section className="main">
+        <div className="container flex ">
+          <Filter />
+          <FlightList />
+        </div>
+      </section>
     </div>
   );
 }

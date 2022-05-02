@@ -176,6 +176,33 @@ body {
   background-color: transparent;
 }
 
+.btn {
+  padding: 0.5rem 2rem;
+  border-radius: 1.8rem;
+  font-size: 2rem;
+  color: cornsilk;
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(#30d9f7));
+  background-image: linear-gradient(to left, blue, #30d9f7);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+}
+
+.border-green {
+  border-bottom: 2px solid #82d182;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
 .red {
   color: red;
 }
@@ -246,6 +273,12 @@ img {
           align-items: center;
 }
 
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .flex-30 {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
@@ -282,6 +315,10 @@ img {
           flex: 0 1 15%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .hero-section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#134176));
   background-image: linear-gradient(to bottom, black, #134176);
@@ -289,11 +326,9 @@ img {
   position: relative;
 }
 
-.navbar {
-  background-color: white;
+.navbar-center {
   max-width: 70%;
   margin: 0 auto;
-  padding: 0.5rem 0;
   border-radius: 7px;
   margin-bottom: -2.2rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
@@ -302,9 +337,45 @@ img {
   position: relative;
 }
 
+.navbar {
+  background-color: white;
+  padding: 0 0.5rem;
+}
+
 .navbar img {
   width: 3rem;
   height: 3rem;
+}
+
+.navbar .nav-btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 3px solid transparent;
+  color: #585656;
+}
+
+.navbar .nav-btn i {
+  font-size: 2.5rem;
+}
+
+.navbar .nav-btn:hover,
+.navbar .nav-btn-active {
+  color: #0bafe0;
+  -webkit-transition: color 0.5s, border-bottom 0.5s;
+  transition: color 0.5s, border-bottom 0.5s;
+}
+
+.navbar .nav-btn-active {
+  border-bottom: 3px solid #0bafe0;
+}
+
+.navbar .nav-btn-small {
+  margin-right: 2rem;
+}
+
+.navbar .nav-btn-small i {
+  font-size: 2rem;
 }
 
 .booking {
@@ -312,6 +383,28 @@ img {
   padding: 3rem 2rem;
   border-radius: 7px;
   padding-top: 5rem;
+}
+
+.booking .city-select {
+  position: relative;
+  top: -100%;
+}
+
+.booking .city-select .city-option .city {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.booking .city-select .city-option .airport-name {
+  font-size: 0.8rem;
+  color: #585656;
+}
+
+.booking .city-select .city-option .airport-code {
+  font-size: 1rem;
+  color: #585656;
 }
 
 .booking .label-1 {
@@ -332,23 +425,22 @@ img {
 .booking .col {
   padding: 1rem 0 1rem 2rem;
   border-right: 1px solid #f1eeee;
-  height: 8.7rem;
 }
 
 .booking .col h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #585656;
 }
 
 .booking .col span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: black;
 }
 
 .booking .col h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   padding: 0.5rem 0;
 }
@@ -361,6 +453,10 @@ img {
 
 .booking .col strong {
   color: #cf834a;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  display: inline-block;
 }
 
 .booking .col:hover {
@@ -421,21 +517,9 @@ img {
   text-align: center;
   position: absolute;
   bottom: 2rem;
-  left: 45%;
-}
-
-.search-btn button {
-  padding: 0.5rem 2rem;
-  border-radius: 29px;
-  font-size: 2rem;
-  color: cornsilk;
-  background-image: -webkit-gradient(linear, right top, left top, from(blue), to(#30d9f7));
-  background-image: linear-gradient(to left, blue, #30d9f7);
-  font-weight: 700;
-  border: none;
-  outline: none;
-  display: inline-block;
-  margin-bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .search-btn .explore {
@@ -503,11 +587,40 @@ img {
 
 .header-main .header-col {
   padding-right: 1rem;
+  color: #dbdbdb;
+}
+
+.header-main .header-col i {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
 }
 
 .booking-header {
   background-color: white;
   padding: 0.5rem 0;
+}
+
+.booking-header .nav .nav-btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 3px solid transparent;
+  color: #585656;
+}
+
+.booking-header .nav .nav-btn i {
+  font-size: 2.5rem;
+}
+
+.booking-header .nav .nav-btn:hover,
+.booking-header .nav .nav-btn-active {
+  color: #0bafe0;
+  -webkit-transition: color 0.5s, border-bottom 0.5s;
+  transition: color 0.5s, border-bottom 0.5s;
+}
+
+.booking-header .nav .nav-btn-active {
+  border-bottom: 3px solid #0bafe0;
 }
 
 .booking-header p {
@@ -578,6 +691,7 @@ img {
   padding: 0.8rem 0.9rem;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
 }
 
 .subheader .option input {
@@ -686,7 +800,7 @@ img {
 }
 
 .filter .progress {
-  width: 70%;
+  width: 100%;
   margin-bottom: 1.2rem;
 }
 
@@ -727,6 +841,7 @@ img {
   border-radius: 5px;
   margin-bottom: 0.8rem;
   width: 48%;
+  cursor: pointer;
 }
 
 .flight-list .flight-content .details {
@@ -819,7 +934,6 @@ img {
 }
 
 .flight-details .wrapper span {
-  color: green;
   font-weight: 700;
   margin-left: 0.3rem;
 }

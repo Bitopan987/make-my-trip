@@ -15,7 +15,7 @@ function Header() {
           </Link>
         </div>
         <div className="flex flex-60 align-center flex-end">
-          {/* <div className="header-col flex align-center">
+          <div className="header-col flex align-center">
             <div>
               <img
                 className="header-img-2"
@@ -24,10 +24,10 @@ function Header() {
               />
             </div>
             <div>
-              <h2 className="sub-header">Introducing myBiz</h2>
-              <p className="header-text">MakeMyTrip for Business</p>
+              <h2 className="sub-header"> myBiz</h2>
+              <p className="header-text"> Business</p>
             </div>
-          </div> */}
+          </div>
           <Link to="my-trips" className="header-col flex align-center">
             <i className="ri-suitcase-2-fill"></i>
             <div>
